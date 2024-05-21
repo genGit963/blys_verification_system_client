@@ -34,7 +34,6 @@ const RegisterPage: React.FC = () => {
   };
 
   return (
-    <>
       <div className="auth">
         <div className="container">
           {loading && <LongitudnalWaveLoading />}
@@ -58,7 +57,6 @@ const RegisterPage: React.FC = () => {
           </form>
         </div>
       </div>
-    </>
   );
 };
 
