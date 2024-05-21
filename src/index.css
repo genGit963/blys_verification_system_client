@@ -12,6 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+input {
+  color: #000;
+}
+
 body {
   margin: 0px;
   padding: 0px;
