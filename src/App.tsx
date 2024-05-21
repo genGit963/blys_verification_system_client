@@ -1,4 +1,3 @@
-import { useState } from "react";
 import AppRouter from "./app_router";
 import "./App.scss";
 
