@@ -17,12 +17,11 @@ body {
   padding: 0px;
   background-color: #e7e5e5e9;
 }
-
 p {
   font-size: 16px;
 }
 
-/*====================  loading effect css  ======================== */
+/*================= loading effect css  ============= */
 
 .dots {
   margin-top: 20px;
