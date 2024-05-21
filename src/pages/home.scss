@@ -1,0 +1,39 @@
+.home {
+    height: 100vh;
+    padding: 1rem;
+
+    .container {
+        margin-top: 20%;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.338);
+        padding: 2rem;
+
+        a {
+            text-decoration: none;
+            text-align: center;
+
+            button {
+                color: white;
+                font-size: 16px;
+                padding: 16px;
+                border: 1px solid;
+                border-radius: 20px;
+                cursor: pointer;
+                background-color: #061052;
+
+                &:hover {
+                    border-color: blue;
+                    box-shadow: 1px 1px 10px blue;
+                    color: rgba(8, 21, 115, 0.903);
+                    background-color: white;
+                }
+            }
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+    }
+
+}

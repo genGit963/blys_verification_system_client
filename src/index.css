@@ -1,0 +1,172 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #000319;
+  background-color: #e7e5e5e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e7e5e5e9;
+}
+
+p {
+  font-size: 16px;
+}
+
+/*====================  loading effect css  ======================== */
+
+.dots {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dots .dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  font-size: large;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 1px 10px 20px #808080b8;
+  animation: wave 1s infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(40px);
+  }
+
+  to {
+    transform: translate(-40px);
+  }
+}
+
+.dots .dot:nth-child(1) {
+  animation-delay: 80ms;
+}
+
+.dots .dot:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.dots .dot:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+.dots .dot:nth-child(4) {
+  animation-delay: 0.32s;
+}
+
+.dots .dot:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.dots .dot:nth-child(6) {
+  animation-delay: 0.48s;
+}
+
+.dots .dot:nth-child(7) {
+  animation-delay: 0.56s;
+}
+
+.dots .dot:nth-child(8) {
+  animation-delay: 0.64s;
+}
+
+.dots .dot:nth-child(9) {
+  animation-delay: 0.72s;
+}
+
+.dots .dot:nth-child(10) {
+  animation-delay: 0.8s;
+}
+
+@media (max-width: 480px) {
+  .dots {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .dots .dot {
+    height: 15px;
+    width: 20px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+    background-color: green;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 1px 10px 20px #808080b8;
+    animation: wave_mobile 1s infinite alternate;
+  }
+
+  @keyframes wave_mobile {
+    0% {
+      transform: translate(-20px);
+    }
+
+    to {
+      transform: translate(20px);
+    }
+  }
+
+  .dots .dot:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .dots .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .dots .dot:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .dots .dot:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .dots .dot:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .dots .dot:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  .dots .dot:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+  .dots .dot:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+
+  .dots .dot:nth-child(9) {
+    animation-delay: 0.9s;
+  }
+
+  .dots .dot:nth-child(10) {
+    animation-delay: 1s;
+  }
+}
