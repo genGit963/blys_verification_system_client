@@ -8,7 +8,7 @@
         background-color: #fff;
         border-radius: 10px;
         border: 1px solid rgba(128, 128, 128, 0.338);
-        padding: 2rem;
+        padding: 1rem;
 
         a {
             text-decoration: none;
@@ -34,7 +34,55 @@
 
         .contact {
             margin-top: 20px;
+            a{
+                color: rgba(16, 16, 180, 0.929);
+            }
         }
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    .home {
+        // background-color: #061052;
+        .container {
+            margin-top: 20%;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.338);
+            a {
+                text-decoration: none;
+                text-align: center;
+
+                button {
+                    color: rgb(255, 212, 212);
+                    font-size: 16px;
+                    padding: 16px;
+                    border: 1px solid;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    background-color: #061052;
+
+                    &:hover {
+                        border-color: rgb(11, 11, 255);
+                        box-shadow: 1px 1px 10px blue;
+                        color: rgba(8, 21, 115, 0.903);
+                        background-color: white;
+                    }
+                }
+            }
+
+            .contact {
+                margin-top: 20px;
+
+                a{
+                    text-align: center;
+                    
+                }
+            }
+        }
+
     }
 
 }
