@@ -38,6 +38,7 @@ const RegisterPage: React.FC = () => {
       <div className="auth">
         <div className="container">
           {loading && <LongitudnalWaveLoading />}
+          <h1 style={{ color: "gray" }}>Blys Test</h1>
           <h1>Verification System</h1>
           <p>Enter a valid email to verify</p>
           <form onSubmit={handleSubmit}>
