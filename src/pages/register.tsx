@@ -34,29 +34,32 @@ const RegisterPage: React.FC = () => {
   };
 
   return (
-      <div className="auth">
-        <div className="container">
-          {loading && <LongitudnalWaveLoading />}
-          <h1 style={{ color: "gray" }}>Blys Test</h1>
-          <h1>Verification System</h1>
-          <p>Enter a valid email to verify</p>
-          <form onSubmit={handleSubmit}>
-            <input
-              required
-              id="email"
-              type="email"
-              autoComplete="email"
-              placeholder="Email"
-              value={registerData.email}
-              onChange={(e) => setRegisterData({ email: e.target.value })}
-            />
-            {error && <div className="server_error">{error}</div>}
-            <button type="submit">
-              <h3>SEND CODE</h3>
-            </button>
-          </form>
-        </div>
+    <div className="auth">
+      <div className="container">
+        {loading && <LongitudnalWaveLoading />}
+        <h1 style={{ color: "gray" }}>Blys Test</h1>
+        <h1>Verification System</h1>
+        <p>Enter a valid email to verify</p>
+        <form onSubmit={handleSubmit}>
+          <input
+            required
+            id="email"
+            type="email"
+            autoComplete="email"
+            placeholder="Email"
+            value={registerData.email}
+            onChange={(e) => setRegisterData({ email: e.target.value })}
+          />
+          {error && <div className="server_error">{error}</div>}
+          <button type="submit">
+            <h3>SEND CODE</h3>
+          </button>
+        </form>
+        <p className="email_spam">
+          <span>Note</span>: Please wait, due all free host and db, it takes sometime 20-30 sec, timeout error may occur but still check email, there will be verification code.
+        </p>
       </div>
+    </div>
   );
 };
 
